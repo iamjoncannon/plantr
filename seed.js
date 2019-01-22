@@ -2,12 +2,14 @@
 let db = require('./models.js')
 
 
+db.sync(
+	{force: true}
 
-
-
-db.sync({force: true}).then(
+).then(() =>{
+	
+	console.log(db)
 
 	db.close()
 
-)
+})
 
