@@ -1,7 +1,21 @@
 
-let db = require('./models.js')
+let { db, Gardener, Vegetable, Plot } = require('./models.js')
 
 // create a few vegetables - 4 vegetables - 
+
+const broccoli = new Vegetable ({
+	name: "broccoli",
+	color: "green",
+	planted_on: Date
+})
+
+const kale = new Vegetable ({
+	name: "kale",
+	color: "green",
+	planted_on: Date
+})
+
+console.log(kale.name)
 
 // create a few gardeners - 3 gardeners
 
@@ -19,9 +33,9 @@ let db = require('./models.js')
 // })
 
 
-page.setAuthor(instance)
+// page.setAuthor(instance)
 
-await page.save();
+// await page.save();
 
 
 db.sync(

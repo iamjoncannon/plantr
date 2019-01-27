@@ -46,4 +46,4 @@ Vegetable.belongsToMany(Plot, {through: 'harvest'})
 Vegetable.belongsToMany(Gardener, {through: 'crop'})
 
 
-module.exports =  db;
+module.exports =  { db, Gardener, Vegetable, Plot };
